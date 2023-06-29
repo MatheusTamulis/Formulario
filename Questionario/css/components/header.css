@@ -1,0 +1,21 @@
+.header
+{
+    background-color: aqua;
+    margin: 70px auto 0 auto;
+    width: 640px;
+    height: 100px;
+}
+
+.header .h1
+{
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+}
+
+.header .h3
+{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+}

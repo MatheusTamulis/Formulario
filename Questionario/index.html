@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/components/container.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/components/form-control.css">
+    <link rel="stylesheet" href="./css/components/header.css">
+    <link rel="stylesheet" href="./css/components/form-group.css">
+    <link rel="stylesheet" href="./css/components/cola.css">
+    <link rel="stylesheet" href="./css/components/label.css">
+    <link rel="stylesheet" href="./css/components/text-bar.css">
+
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <h1 class="h1">Formulario para Gamers</h1>
+
+            <h3 class="h3">Se você for gamer responda esse formulario</h3>
+
+        </header>
+
+        <form action="" class="form-control">
+
+            <div class="form-group">
+
+                <label for="">Nome</label>
+
+                <input type="text" name="Nome" id="Nome" class="text-bar" placeholder="Insira seu nome completo">
+            
+            </div>
+
+            <div class="form-group">
+            
+                <label for="">Nick<span class="cola">(mais usado)</span></label>
+            
+                <input type="text" name="Nick" id="Nick" class="text-bar" placeholder="Insira seu Nick mais usado nos jogos">
+            
+            </div>
+
+            <div class="form-group">
+            
+                <label for="">E-mail</label>
+            
+                <input type="text" name="email" id="email" class="text-bar" placeholder="Insira seu E-mail">
+            
+            </div>
+
+            <div class="form-group">
+            
+                <label for="">Idade<span class="cola">(opicional)</span></label>
+            
+                <input type="number" name="idade" id="idade" min="10" max="99" class="text-bar" placeholder="Idade">
+            
+            </div>
+
+            <div class="form-group">
+            
+                <p class="">Você gosta de platinar jogos?</p>
+
+                <select name="nivel" id="nivel" class="text-bar">
+                    <option value="iniciante">Não gosto</option>
+                    <option value="intermediario">Platino alguns jogos que quero</option>
+                    <option value="hardcore">Platino todos os jogos que eu jogo</option>
+                </select>
+            
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

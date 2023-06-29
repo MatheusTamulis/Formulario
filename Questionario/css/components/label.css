@@ -1,0 +1,8 @@
+label, p
+{
+    display: flex;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
