@@ -1,0 +1,19 @@
+.enviar-button
+{
+    width: 100%; 
+    background-color: rgb(8, 136, 93);
+    border: 1px solid #000;
+    min-height: 50px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    transition: .3s;
+}
+
+.enviar-button:hover
+{
+    color: #000;
+    cursor: pointer;
+    background-color: rgb(39, 177, 131);
+}

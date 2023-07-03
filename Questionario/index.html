@@ -13,9 +13,14 @@
     <link rel="stylesheet" href="./css/components/form-control.css">
     <link rel="stylesheet" href="./css/components/header.css">
     <link rel="stylesheet" href="./css/components/form-group.css">
+    <link rel="stylesheet" href="./css/components/option.css">
     <link rel="stylesheet" href="./css/components/cola.css">
     <link rel="stylesheet" href="./css/components/label.css">
     <link rel="stylesheet" href="./css/components/text-bar.css">
+    <link rel="stylesheet" href="./css/components/input-radio.css">
+    <link rel="stylesheet" href="./css/components/input-checkbox.css">
+    <link rel="stylesheet" href="./css/components/input-textarea.css">
+    <link rel="stylesheet" href="./css/components/enviar-button.css">
 
     <title>Formulário</title>
 </head>
@@ -38,7 +43,7 @@
 
                 <label for="">Nome</label>
 
-                <input type="text" name="Nome" id="Nome" class="text-bar" placeholder="Insira seu nome completo">
+                <input type="text" name="Nome" id="Nome" class="text-bar" placeholder="Insira seu nome completo" required>
             
             </div>
 
@@ -46,7 +51,7 @@
             
                 <label for="">Nick<span class="cola">(mais usado)</span></label>
             
-                <input type="text" name="Nick" id="Nick" class="text-bar" placeholder="Insira seu Nick mais usado nos jogos">
+                <input type="text" name="Nick" id="Nick" class="text-bar" placeholder="Insira seu Nick mais usado nos jogos" required>
             
             </div>
 
@@ -54,7 +59,7 @@
             
                 <label for="">E-mail</label>
             
-                <input type="text" name="email" id="email" class="text-bar" placeholder="Insira seu E-mail">
+                <input type="email" name="email" id="email" class="text-bar" placeholder="Insira seu e-mail" required>
             
             </div>
 
@@ -71,11 +76,104 @@
                 <p class="">Você gosta de platinar jogos?</p>
 
                 <select name="nivel" id="nivel" class="text-bar">
+                    <option disabled selected value="Selecione">Selecione</option>
                     <option value="iniciante">Não gosto</option>
                     <option value="intermediario">Platino alguns jogos que quero</option>
                     <option value="hardcore">Platino todos os jogos que eu jogo</option>
                 </select>
             
+            </div>
+
+            <div class="form-group">
+            
+                <p class="">Qual sua plataforma preferida?</p>
+            
+                <select name="nivel" id="nivel" class="text-bar" required>
+                    <option selected disabled value="Selecione">Selecione</option>
+                    <option value="Xbox">Xbox</option>
+                    <option value="Playstation">Playstation</option>
+                    <option value="PC">PC</option>
+                    <option value="Celular">Celular</option>
+                </select>
+            
+            </div>
+
+            <div class="form-group">
+
+                <p>Qual tipo de jogo você mais joga?</p>
+
+                <label class="-second" for="">
+                    <input class="input-radio" type="radio" name="Tipo" id="Tipo">Multiplayer
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-radio" type="radio" name="Tipo" id="Tipo">Singleplayer
+                </label>
+            </div>
+
+            <div class="form-group">
+
+                <p class="">Qual seu gênero favorito?</p>
+
+                <select name="nivel" id="nivel" class="text-bar">
+                    <option disabled selected value="Selecione">Selecione</option>
+                    <option value="Açao">Ação</option>
+                    <option value="Aventura">Aventura</option>
+                    <option value="RPG">RPG</option>
+                    <option value="Simulaçao">Simulação</option>
+                    <option value="Estrategia">Estratégia</option>
+                    <option value="Esportes">Esportes</option>
+                    <option value="Corrida">Corrida</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+
+                <p>Quais gêneros você gosta?<span class="cola">(selecione quantos quiser)</span></p>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Ação">Ação
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Aventura">Aventura
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="RPG">RPG
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Simulação">Simulação
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Estrategia">Estratégia
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Esportes">Esportes
+                </label>
+
+                <label class="-second" for="">
+                    <input class="input-checkbox" type="checkbox" name="Preferencia" id="Corrida">Corrida
+                </label>
+                
+            </div>
+
+            <div class="form-group">
+
+                <p>Liste seus 5 jogos favoritos</p>
+
+                <textarea class="input-textarea" name="comentario" id="comentario" placeholder="Escreva seu comentário aqui" required></textarea>
+
+            </div>
+
+            <div class="form-group">
+
+                <button type="enviar" id="enviar" class="enviar-button">Enviar</button>
+
             </div>
 
         </form>
